@@ -11,6 +11,7 @@ public class HelloBeanJunitTest {
 	
 	@BeforeEach
 	void setup() {
+		System.out.println();
 		//1. Spring Container 객체생성
 		context = new GenericXmlApplicationContext("classpath:hello-bean.xml");
 	}
