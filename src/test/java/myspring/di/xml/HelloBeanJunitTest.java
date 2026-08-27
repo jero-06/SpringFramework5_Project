@@ -34,7 +34,7 @@ public class HelloBeanJunitTest {
 		hello1.print();
 		
 		Printer printer = context.getBean("strPrinter", Printer.class);
-		
+		assertEquals("Hello 스프링", printer.toString());
 
 	}
 
