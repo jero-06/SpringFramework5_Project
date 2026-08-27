@@ -27,6 +27,15 @@ public class HelloBeanJunitTest {
 		//주소 비교
 		System.out.println(hello1 == hello2);
 		assertSame(hello1, hello2);
+		
+		//값 비교
+		assertEquals("Hello 스프링", hello1.sayHello());
+		
+		hello1.print();
+		
+		Printer printer = context.getBean("strPrinter", Printer.class);
+		
+
 	}
 
 }
