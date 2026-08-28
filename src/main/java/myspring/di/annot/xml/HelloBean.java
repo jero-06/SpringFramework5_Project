@@ -9,13 +9,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class HelloBean {
-	@Value("${myname}")
+	@Value("${myName}")
 	String name;
 	
 	@Autowired
 	@Qualifier("stringPrinter")
 	PrinterBean printer;
 	
+	@Value("#{'${myNameList}'.split(',')}")
+	//@Value("Java,SpringFW,SpringBoot")
 	List<String> names;
 
 	public HelloBean() {

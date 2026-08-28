@@ -8,4 +8,8 @@
 	<!-- DI 전략2에 해당하는 Configuration file -->
 	
 	<context:component-scan base-package="myspring.di.annot"></context:component-scan>
+	
+	<!-- properties file의 정보 설정 -->
+	<context:property-placeholder location="classpath:values.properties" />
+	
 </beans>
