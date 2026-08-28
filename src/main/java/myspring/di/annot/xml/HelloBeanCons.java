@@ -21,7 +21,7 @@ public class HelloBeanCons {
 
 	
 	@Autowired
-	public HelloBeanCons(@Value("$(myName2)") String name, 
+	public HelloBeanCons(@Value("${myName2}") String name, 
 			             @Qualifier("consolePrinter") PrinterBean printer) {
 		System.out.println(this.getClass().getName() + " 오버로딩 생성자 호출됨!");
 		this.name = name;

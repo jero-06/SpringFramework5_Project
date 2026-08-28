@@ -42,7 +42,11 @@ public class AnnotatedHelloBeanTest {
 		assertEquals("Hello 어노테이션", hello.sayHello());
 		hello.print();
 		assertEquals("Hello 어노테이션", printer.toString());
+		assertEquals(3, hello.getNames().size());
 		
+		for(String name:hello.getNames()) {
+			System.out.println(name);
+		}
 		
 	}
 
