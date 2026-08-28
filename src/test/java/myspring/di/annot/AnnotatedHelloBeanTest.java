@@ -11,9 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import myspring.di.annot.xml.HelloBean;
-import myspring.di.annot.xml.HelloBeanCons;
-import myspring.di.annot.xml.PrinterBean;
+import myspring.di.annot.HelloBean;
+import myspring.di.annot.HelloBeanCons;
+import myspring.di.annot.PrinterBean;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(locations = "classpath:hello-annot.xml")
