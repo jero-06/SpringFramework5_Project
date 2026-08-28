@@ -37,7 +37,7 @@ public class HelloConfig {
 		<property name="printer" ref="strPrinter" />
 	</bean>
 	 */
-	@Bean @Scope(value = "singeton")
+	@Bean @Scope(value = "singleton")
 	public Hello hello() {
 		Hello hello = new Hello();
 		// 자바컨피그
