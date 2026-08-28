@@ -20,7 +20,7 @@ public class HelloBeanSpringTest {
 	@Resource(name = "hello")
 	Hello helloSetter;
 	
-	@Test
+	@Test 
 	void helloBeanCons() {
 		//생성자
 		System.out.println(hello.sayHello());
