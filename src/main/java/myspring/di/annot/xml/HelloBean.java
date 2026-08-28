@@ -15,6 +15,7 @@ public class HelloBean {
 	@Autowired
 	@Qualifier("stringPrinter")
 	PrinterBean printer;
+	
 	List<String> names;
 
 	public HelloBean() {
@@ -45,7 +46,7 @@ public class HelloBean {
 //	public void setPrinter(PrinterBean printer) {
 //		System.out.println("setPrinter() 메서드 호출됨 " + printer.getClass().getName());
 //		this.printer = printer;
-	}
+//	}
 
 	public String sayHello() {
 		return "Hello " + name;
